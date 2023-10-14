@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        a[target]{
+            color: blue;
+        }
+        a[target="_blank"]{
+            color: chartreuse;
+        }
+        p[class='check']{
+            color: chocolate;
+        }
+        p[class~='sample']{
+             border:2px solid orange;
+        }
+        p[class|='lorem']{
+            border: 5px solid blue;
+        }
+        p[class|='-lorem']{
+            border: 5px solid blueviolet
+    ;
+        }
+        p[title^='panda']{
+            background-color: darkorange;
+        }
+        
+        </style>
+    
+    <title>Document</title>
+</head>
+<body>
+<!--It applies styling on b asis attribute and the value of attribute of html element 1.[attribute]2.[attribute='value'(exact value)] 3.[attribute~=value] should contain this value 4.[attribute|='value'(exat match or value followed by -hypen match)] 5.[attribute^='value'(value should start with given value)] 6.attribute$='value' (end with cirtain   value)] 7.[attribute*='value'(specified value should part of value attribute[in middle of the value])]-->
+    <a href="" target="_blank"> sample</a>
+    <a href="" target="_self">sample2</a>
+    <a href="" target="_parent">sample3</a>
+    <p class="check" title="panda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio soluta rerum maxime quibusdam laboriosam magnam minus veritatis expedita ab excepturi neque voluptatum cumque quia, eligendi sint vitae enim consectetur! Eligendi.</p>
+    <p class="check sample" title="panda-happy">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, vitae quos maxime rerum facilis velit vel. Veritatis, consectetur praesentium ad, ab consequuntur nulla distinctio maiores accusamus saepe nostrum et suscipit?</p>
+    <p class="lorem"  title="pan">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores dolore velit cupiditate repellendus ducimus aliquam alias magnam, inventore soluta similique ut? Veritatis facere nostrum iure ipsum officia! Inventore, temporibus eius!</p>
+    <p class="lorem-sample" title="unhappy-panda">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, perspiciatis ipsum repudiandae ab ducimus aut placeat, necessitatibus voluptatum nobis soluta reprehenderit reiciendis omnis est asperiores, tempora quis eligendi? Est, soluta.</p>
+
+</body>
+</html>

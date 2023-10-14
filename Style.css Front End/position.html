@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+         div{
+            background-color: blueviolet;
+            height: 100px;
+            width: 300px;
+            border: 3px solid blue;
+            top: 300px;
+            position: static;
+
+        }
+        .div2{
+            background-color: blueviolet;
+            height: 100px;
+            width: 300px;
+            border: 3px solid blue;
+            top: 200px;
+            right: 45px;
+            left: 45px;
+            position: relative;
+        }
+        .fixed{
+            background-color: blueviolet;
+            height: 100px;
+            width: 300px;
+            border: 3px solid blue;
+            top: 200px;
+            right: 45px;
+            left: 45px;
+            position: fixed;
+        }
+        .absolute{
+            background-color: blueviolet;
+            height: 300px;
+            width: 300px;
+            border: 3px solid blue;
+            top: 200px;
+           
+            position: relative;
+        }
+        .stick{
+border: 1px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- position value static is by default -->
+    <div>this is div</div>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum assumenda aperiam dolorum reiciendis quaerat officia, architecto, porro mollitia eligendi cumque vitae necessitatibus vel asperiores, minima nemo corporis iste sit harum delectus consectetur fugit incidunt possimus! Excepturi fugit debitis voluptates quibusdam omnis dicta placeat aliquam possimus reiciendis tempore nemo iure nobis ab iste sint odio nostrum eligendi, voluptatum aspernatur, laborum vel voluptatibus reprehenderit? Veritatis neque tempora facere doloremque tempore suscipit, sint provident quia omnis illum cupiditate repellendus dolorum, impedit cumque eum beatae optio assumenda iure amet, blanditiis inventore doloribus nisi. Iure deleniti enim odio sed. Placeat illum laboriosam atque! Quod perspiciatis magnam numquam, nostrum quisquam tempore sunt fuga iusto architecto dicta incidunt. Facilis earum aliquam quod ipsam id error suscipit illo voluptatem i.</p>
+    <!-- relative position is start from orignal position -->
+    <div class="div2">this is div2 relative</div><br><br>
+    <!-- postion fixed is stay fixed to screen -->
+    <div class="fixed"> this is postion fixed</div><br><br><br>
+    <!--
+        absolute
+    -->
+    <div class="absolute"> this is absolute
+        <div class="innerdiv">inner div absolute</div>
+    </div>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+ 
+
+
+</body>
+</html>
